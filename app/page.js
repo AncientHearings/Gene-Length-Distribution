@@ -28,20 +28,22 @@ export default function Home() {
   return (
   <main className="min-h-screen bg-gray-950 text-white p-10">
     <h1 className="text-3xl font-bold text-blue-400">Gene Length Distribution</h1>
-    {isLoading ? <p>Loading...</p> : <div>
-    <ResponsiveContainer width="100%" height={400}>
-      <BarChart data={genes}>
-       <XAxis dataKey="gene" />
-       <YAxis />
-       <Tooltip />
-       <Bar dataKey="length" fill="#3bf679" />
-      </BarChart>
-     </ResponsiveContainer>
-    </div>}
+    {isLoading ? (
+      <p>Loading...</p>
+    ) : (
+      <div>
+        <ResponsiveContainer width="100%" height={400}>
+          <BarChart data={genes}>
+            <XAxis dataKey="gene" />
+            <YAxis />
+            <Tooltip />
+            <Bar dataKey="length" fill="#3bf679" />
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    )}
   </main>
 )
-
-
 }
 
 
