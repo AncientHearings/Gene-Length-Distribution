@@ -1,0 +1,55 @@
+[00:00:01.212] Server  LOG     ✓ Ready in 880ms
+[00:00:08.066] Server  LOG     ○ Compiling / ...
+[00:00:09.683] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.424] Browser LOG     [{"chromosome":"17","gene":"BRCA1","length":125953},{"chromosome":"17","gene":"TP53","length":25767},{"chromosome":"7","gene":"EGFR","length":192808},{"chromosome":"10","gene":"PTEN","length":109292},{"chromosome":"7","gene":"CFTR","length":428851},{"chromosome":"12","gene":"KRAS","length":45690},{"chromosome":"8","gene":"MYC","length":7517},{"chromosome":"13","gene":"RB1","length":295701},{"chromosome":"6","gene":"VEGFA","length":16303},{"chromosome":"19","gene":"APOE","length":5609}]
+[00:00:11.424] Browser ERROR   In HTML, %s cannot be a descendant of <%s>.
+This will cause a hydration error.%s <div> p 
+
+  ...
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary name="/" loading={null}>
+            <HTTPAccessFallbackBoundary notFound={<SegmentViewNode>} forbidden={undefined} unauthorized={undefined}>
+              <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+                <RedirectBoundary>
+                  <RedirectErrorBoundary router={{...}}>
+                    <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:<Fragment>, ...}} ...>
+                      <SegmentViewNode type="page" pagePath="page.js">
+                        <SegmentTrieNode>
+                        <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                          <Home params={Promise} searchParams={Promise}>
+                            <main className="min-h-scre...">
+                              <h1>
+>                             <p>
+                                ...
+                                  <ReportChartSize>
+>                                 <div
+>                                   ref={function RechartsWrapper.useCallback[innerRef]}
+>                                   width={600}
+>                                   height={400}
+>                                   className="recharts-wrapper"
+>                                   style={{position:"relative",cursor:"default",width:600,height:400}}
+>                                   onClick={function RechartsWrapper.useCallback[myOnClick]}
+>                                   onContextMenu={function RechartsWrapper.useCallback[myOnContextMenu]}
+>                                   onDoubleClick={function RechartsWrapper.useCallback[myOnDoubleClick]}
+>                                   onFocus={function RechartsWrapper.useCallback[onFocus]}
+>                                   onBlur={function RechartsWrapper.useCallback[onBlur]}
+>                                   onKeyDown={function RechartsWrapper.useCallback[onKeyDown]}
+>                                   onMouseDown={function RechartsWrapper.useCallback[myOnMouseDown]}
+>                                   onMouseEnter={function RechartsWrapper.useCallback[myOnMouseEnter]}
+>                                   onMouseLeave={function RechartsWrapper.useCallback[myOnMouseLeave]}
+>                                   onMouseMove={function RechartsWrapper.useCallback[myOnMouseMove]}
+>                                   onMouseUp={function RechartsWrapper.useCallback[myOnMouseUp]}
+>                                   onTouchEnd={function RechartsWrapper.useCallback[myOnTouchEnd]}
+>                                   onTouchMove={function RechartsWrapper.useCallback[myOnTouchMove]}
+>                                   onTouchStart={function RechartsWrapper.useCallback[myOnTouchStart]}
+>                                 >
+                      ...
+                    ...
+        ...
+
+[00:00:11.424] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. p <div>
+[00:01:15.766] Server  LOG     ✓ Compiled in 103ms
+[00:02:04.871] Server  LOG     ✓ Compiled in 21ms
