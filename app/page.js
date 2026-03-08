@@ -7,7 +7,15 @@ export default function Home() {
 
   const [genes, setGenes] = useState([])
   const [isLoading, setIsLoading] = useState(true)
-  const geneList = ["BRCA1", "TP53", "EGFR", "PTEN", "CFTR", "KRAS", "MYC", "RB1", "VEGFA", "APOE"]
+  const geneList = [
+  "BRCA1", "TP53", "EGFR", "PTEN", "CFTR", "KRAS", "MYC", "RB1", "VEGFA", "APOE",
+
+  "BRCA2", "AKT1", "PIK3CA", "CDK2", "CDK4", "CDKN1A", "CDKN2A", "BRAF", "NRAS", "HRAS",
+  "SMAD4", "SMAD2", "SMAD3", "JAK2", "STAT3", "MAPK1", "MAPK3", "ERBB2", "ERBB3", "ERBB4",
+  "FGFR1", "FGFR2", "FGFR3", "PDGFRA", "PDGFRB", "KIT", "MET", "NOTCH1", "NOTCH2", "NOTCH3",
+  "WNT1", "WNT3A", "CTNNB1", "GSK3B", "AXIN1", "AXIN2", "TGFBR1", "TGFBR2", "FOXO1", "FOXO3",
+  "MTOR", "HIF1A", "VHL", "SOD1", "FASN", "PPARG", "NFKB1", "NFKBIA", "IL6", "TNF"
+  ]
   useEffect(() => {
   Promise.all(geneList.map(gene => 
     fetch(`https://rest.ensembl.org/lookup/symbol/homo_sapiens/${gene}?content-type=application/json`)
