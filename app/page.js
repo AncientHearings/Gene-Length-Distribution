@@ -42,7 +42,7 @@ export default function Home() {
       <div>
         <ResponsiveContainer width="100%" height={400}>
           <BarChart data={genes}>
-            <XAxis dataKey="gene" />
+            <XAxis dataKey="gene" angle={-45} textAnchor="end" height={60} />
             <YAxis />
             <Tooltip />
             <Bar dataKey="length" fill="#3bf679" />
